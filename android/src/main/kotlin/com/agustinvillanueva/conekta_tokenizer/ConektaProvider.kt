@@ -20,7 +20,7 @@ class ConektaProvider : ConektaInterface {
 
     override fun setApiKey(apiKey: String) {
         Conekta.setPublicKey(apiKey)
-        Conekta.setApiVersion("0.3.0")
+        Conekta.setApiVersion("2.1.0")
         Conekta.collectDevice(activity)
     }
 
