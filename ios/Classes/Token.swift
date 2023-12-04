@@ -40,7 +40,7 @@ class Token
             }
 
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.setValue("application/vnd.conekta-v0.3.0+json", forHTTPHeaderField: "Accept")
+            request.setValue("application/vnd.conekta-v2.1.0+json", forHTTPHeaderField: "Accept")
             request.setValue("{\"agent\":\"Conekta iOS SDK\"}", forHTTPHeaderField: "Conekta-Client-User-Agent")
             request.httpBody = self.card?.jsonSerialization() as Data?
             
